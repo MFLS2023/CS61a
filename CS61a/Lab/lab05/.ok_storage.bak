@@ -1,2 +1,3 @@
 'partial_reverse-correct', (0, 66)
 'group_by-correct', (512, 66)
+'distance-correct', (1024, 66)
