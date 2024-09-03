@@ -11,7 +11,15 @@ def partial_reverse(s, start):
     [1, 2, 7, 6, 5, 3, 4]
     """
     "*** YOUR CODE HERE ***"
-
+    i=start
+    j=len(s)-1
+    def partial(s,i,j):
+        if i>j:
+            return s
+        else:
+            s[i],s[j]=s[j],s[i]
+            return partial(s,i+1,j-1)
+    s=partial(s,i,j)
 
 def group_by(s, fn):
     """Return a dictionary of lists that together contain the elements of s.
